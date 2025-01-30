@@ -1,0 +1,25 @@
+FORMAS DE AUTENTICAÇÃO:
+https://www.alura.com.br/artigos/tipos-de-autenticacao
+
+------------------------------------------------------------------------
+
+ERRO LOMBOK:
+
+pode ocorre de acontecer erros do tipo:
+
+cannot find symbol
+[ERROR] symbol: method builder()
+[ERROR] location: class Person
+
+isso é bug do lombok, por algum motivo não encontrou os métodos get,
+para resolver isso fui até o pom.xml  e coloque a versão do lombok que queria usar:
+
+<annotationProcessorPaths>
+	<path>
+		<groupId>org.projectlombok</groupId>
+		<artifactId>lombok</artifactId>
+		<version>1.18.30</version>
+	</path>
+</annotationProcessorPaths>
+
+------------------------------------------------------------------------
